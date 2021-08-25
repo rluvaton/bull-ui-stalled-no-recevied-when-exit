@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "bull": "^3.29.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
