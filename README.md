@@ -9,15 +9,14 @@ There are 2 _states_ (let's call them services for the sake of the explanation) 
 
 ## Run
 
-### `docker-compose`
-Steps to run:
+### `docker-compose` for everything (node + Redis)
 1. Run by running `docker-compose up`
 2. Stop the listener service by running `docker-compose stop listener`
 3. Wait a 5-10 seconds and see that stalled event **IS NOT** logged
 4. Run the service again by `docker-compose start listener`
 5. Wait a 5-10 seconds and see that the stalled event **LOGGED**
 
-### Node and `docker-compse` for Redis
+### Regualr Node and `docker-compse` for Redis
 1. Run the redis service by `docker-compose start redis`
 2. run the _listen_ service by running `npm run start:listen`
 3. run the _add_ service by running `npm run start:add`
