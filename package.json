@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:add": "cross-env ADD=1 node index.js",
+    "start:listen": "node index.js"
   },
   "keywords": [],
   "author": "Raz Luvaton",
