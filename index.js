@@ -38,8 +38,6 @@ testQueue.on('global:removed', (job) => console.log('global:removed | A job succ
 
 async function run() {
   if (shouldAdd) {
-    // await testQueue.obliterate({force: true});
-    // return;
     console.log('Adding');
 
     testQueue.add({hello: 'world'});
